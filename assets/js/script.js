@@ -1,4 +1,3 @@
-```javascript
 const weekButtons = document.querySelectorAll(".week-button");
 
 
@@ -13,4 +12,4 @@ weekButtons.forEach(function(button) {
     });
 
 });
-```
+
