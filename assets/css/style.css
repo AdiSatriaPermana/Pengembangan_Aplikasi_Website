@@ -646,3 +646,14 @@ footer p {
     }
 
 }
+
+.nav-menu a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #7c5cff;
+}

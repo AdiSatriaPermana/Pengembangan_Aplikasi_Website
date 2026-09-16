@@ -3,29 +3,25 @@
 
 <head>
 
-    <!-- CHARACTER -->
     <meta charset="UTF-8">
 
-    <!-- RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO METADATA -->
-    <title>Profil Adi Satria Permana</title>
+    <title>Profil Diri - Adi Satria Permana</title>
 
     <meta
         name="description"
-        content="Halaman profil Adi Satria Permana, mahasiswa Teknik Informatika."
+        content="Profil diri Adi Satria Permana, mahasiswa Teknik Informatika."
     >
 
-    <!-- OPEN GRAPH METADATA -->
     <meta
         property="og:title"
-        content="Profil Adi Satria Permana"
+        content="Profil Diri - Adi Satria Permana"
     >
 
     <meta
         property="og:description"
-        content="Halaman profil Adi Satria Permana, mahasiswa Teknik Informatika."
+        content="Profil diri Adi Satria Permana, mahasiswa Teknik Informatika."
     >
 
     <meta
@@ -38,10 +34,9 @@
         content="website"
     >
 
-    <!-- CSS -->
     <link
         rel="stylesheet"
-        href="/profil/assets/style.css"
+        href="assets/style.css"
     >
 
 </head>
@@ -57,16 +52,17 @@
         <div class="container">
 
             <h1>
-                Adi Satria Permana
+                Profil Diri
             </h1>
 
             <p>
-                Mahasiswa Teknik Informatika
+                Adi Satria Permana
             </p>
 
         </div>
 
     </header>
+
 
 
     <!-- NAVIGATION -->
@@ -87,9 +83,14 @@
                 Mata Kuliah
             </a>
 
+            <a href="https://adisatriapermana.my.id/">
+                Website Utama
+            </a>
+
         </div>
 
     </nav>
+
 
 
     <!-- MAIN -->
@@ -97,32 +98,32 @@
     <main>
 
 
-        <!-- SECTION PROFIL -->
+        <!-- PROFIL -->
 
         <section id="profil">
 
             <div class="container">
 
                 <h2>
-                    Profil Diri
+                    Tentang Saya
                 </h2>
 
 
                 <div class="profile-content">
 
 
-                    <!-- FOTO -->
+                    <div class="photo-container">
 
-                    <img
-                        src="assets/img/Pfp.jpg"
-                        alt="Foto profil Adi Satria Permana"
-                        class="profile-photo"
-                    >
+                        <img
+                            src="/profil/Pfp.jpg"
+                            alt="Foto profil Adi Satria Permana"
+                            class="profile-photo"
+                        >
+
+                    </div>
 
 
-                    <!-- DESKRIPSI -->
-
-                    <div class="profile-description">
+                    <div class="profile-text">
 
                         <h3>
                             Halo, Saya Adi!
@@ -131,17 +132,17 @@
                         <p>
 
                             Saya adalah mahasiswa Teknik Informatika
-                            yang memiliki ketertarikan pada dunia
+                            yang memiliki ketertarikan terhadap dunia
                             teknologi dan pengembangan website.
 
                         </p>
 
                         <p>
 
-                            Saya sedang mempelajari berbagai teknologi
-                            dalam pengembangan web dan pemrograman untuk
-                            meningkatkan kemampuan di bidang teknologi
-                            informasi.
+                            Saat ini saya sedang mempelajari berbagai
+                            teknologi pemrograman dan pengembangan web
+                            untuk meningkatkan kemampuan di bidang
+                            teknologi informasi.
 
                         </p>
 
@@ -155,9 +156,10 @@
         </section>
 
 
-        <!-- SECTION BIODATA -->
 
-        <section id="biodata" class="background">
+        <!-- BIODATA -->
+
+        <section id="biodata" class="dark-section">
 
             <div class="container">
 
@@ -166,57 +168,57 @@
                 </h2>
 
 
-                <div class="biodata-card">
+                <div class="biodata-grid">
 
 
-                    <div class="biodata-item">
+                    <div class="biodata-card">
 
-                        <h3>
+                        <span>
                             Nama
-                        </h3>
+                        </span>
 
-                        <p>
+                        <h3>
                             Adi Satria Permana
-                        </p>
+                        </h3>
 
                     </div>
 
 
-                    <div class="biodata-item">
+                    <div class="biodata-card">
 
-                        <h3>
+                        <span>
                             Program Studi
-                        </h3>
+                        </span>
 
-                        <p>
+                        <h3>
                             Teknik Informatika
-                        </p>
+                        </h3>
 
                     </div>
 
 
-                    <div class="biodata-item">
+                    <div class="biodata-card">
 
-                        <h3>
+                        <span>
                             Semester
-                        </h3>
+                        </span>
 
-                        <p>
+                        <h3>
                             Semester V
-                        </p>
+                        </h3>
 
                     </div>
 
 
-                    <div class="biodata-item">
+                    <div class="biodata-card">
+
+                        <span>
+                            Angkatan
+                        </span>
 
                         <h3>
-                            Angkatan
-                        </h3>
-
-                        <p>
                             2024
-                        </p>
+                        </h3>
 
                     </div>
 
@@ -228,7 +230,8 @@
         </section>
 
 
-        <!-- SECTION MATA KULIAH -->
+
+        <!-- MATA KULIAH -->
 
         <section id="mata-kuliah">
 
@@ -238,21 +241,17 @@
                     Mata Kuliah Semester Ini
                 </h2>
 
+                <p class="description">
 
-                <p class="section-description">
-
-                    Berikut adalah beberapa mata kuliah yang
-                    sedang saya pelajari pada semester ini.
+                    Berikut adalah mata kuliah yang sedang
+                    saya pelajari pada semester ini.
 
                 </p>
 
 
-                <!-- TABLE -->
-
-                <div class="table-wrapper">
+                <div class="table-container">
 
                     <table>
-
 
                         <thead>
 
@@ -276,7 +275,6 @@
 
 
                         <tbody>
-
 
                             <tr>
 
@@ -345,14 +343,11 @@
 
                             </tr>
 
-
                         </tbody>
-
 
                     </table>
 
                 </div>
-
 
             </div>
 
@@ -360,6 +355,7 @@
 
 
     </main>
+
 
 
     <!-- FOOTER -->
@@ -372,32 +368,23 @@
                 Adi Satria Permana
             </h2>
 
-
             <p>
                 Mahasiswa Teknik Informatika
             </p>
 
-
             <p>
 
-                Kunjungi website utama saya:
+                Website utama:
 
-                <a
-                    href="https://adisatriapermana.my.id/"
-                    target="_blank"
-                >
+                <a href="https://adisatriapermana.my.id/">
                     adisatriapermana.my.id
                 </a>
 
             </p>
 
-
             <p class="copyright">
-
-                &copy; 2026 Adi Satria Permana
-
+                © 2026 Adi Satria Permana
             </p>
-
 
         </div>
 
