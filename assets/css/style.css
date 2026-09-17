@@ -1,659 +1,482 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
 * {
+  margin: 0;
 
-    margin: 0;
+  padding: 0;
 
-    padding: 0;
-
-    box-sizing: border-box;
-
+  box-sizing: border-box;
 }
-
 
 html {
-
-    scroll-behavior: smooth;
-
+  scroll-behavior: smooth;
 }
-
 
 body {
+  font-family: "DM Sans", sans-serif;
 
-    font-family: "DM Sans", sans-serif;
+  background: #0f0f0f;
 
-    background: #0f0f0f;
-
-    color: white;
-
+  color: white;
 }
-
 
 /* NAVBAR */
 
 .navbar {
+  width: 100%;
 
-    width: 100%;
+  padding: 25px 8%;
 
-    padding: 25px 8%;
+  display: flex;
 
-    display: flex;
+  justify-content: space-between;
 
-    justify-content: space-between;
+  align-items: center;
 
-    align-items: center;
-
-    border-bottom: 1px solid #222;
-
+  border-bottom: 1px solid #222;
 }
-
 
 .logo {
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
 
-    font-size: 24px;
-
-    font-weight: 700;
-
+  font-weight: 700;
 }
-
 
 .logo span {
-
-    color: #7c5cff;
-
+  color: #7c5cff;
 }
-
 
 .nav-text {
+  color: #888;
 
-    color: #888;
-
-    font-size: 14px;
-
+  font-size: 14px;
 }
-
 
 /* HERO */
 
 .hero {
+  min-height: 85vh;
 
-    min-height: 85vh;
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    align-items: center;
-
-    padding: 80px 10%;
-
+  padding: 80px 10%;
 }
-
 
 .hero-content {
-
-    max-width: 800px;
-
+  max-width: 800px;
 }
-
 
 .hello {
+  color: #7c5cff;
 
-    color: #7c5cff;
+  font-size: 14px;
 
-    font-size: 14px;
+  letter-spacing: 3px;
 
-    letter-spacing: 3px;
-
-    margin-bottom: 20px;
-
+  margin-bottom: 20px;
 }
-
 
 .hero h1 {
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
+  font-size: 80px;
 
-    font-size: 80px;
+  line-height: 1.05;
 
-    line-height: 1.05;
-
-    margin-bottom: 30px;
-
+  margin-bottom: 30px;
 }
-
 
 .hero h1 span {
-
-    color: #7c5cff;
-
+  color: #7c5cff;
 }
-
 
 .description {
+  color: #aaa;
 
-    color: #aaa;
+  font-size: 18px;
 
-    font-size: 18px;
+  line-height: 1.7;
 
-    line-height: 1.7;
+  max-width: 600px;
 
-    max-width: 600px;
-
-    margin-bottom: 40px;
-
+  margin-bottom: 40px;
 }
-
 
 /* BUTTON */
 
 .btn {
+  display: inline-flex;
 
-    display: inline-flex;
+  align-items: center;
 
-    align-items: center;
+  gap: 15px;
 
-    gap: 15px;
+  padding: 15px 25px;
 
-    padding: 15px 25px;
+  background: #7c5cff;
 
-    background: #7c5cff;
+  color: white;
 
-    color: white;
+  text-decoration: none;
 
-    text-decoration: none;
+  border-radius: 8px;
 
-    border-radius: 8px;
-
-    transition: 0.3s;
-
+  transition: 0.3s;
 }
-
 
 .btn:hover {
+  transform: translateY(-3px);
 
-    transform: translateY(-3px);
-
-    background: #6849e8;
-
+  background: #6849e8;
 }
-
 
 /* ABOUT */
 
 .about {
+  padding: 100px 10%;
 
-    padding: 100px 10%;
-
-    background: #151515;
-
+  background: #151515;
 }
-
 
 .section-title {
-
-    margin-bottom: 50px;
-
+  margin-bottom: 50px;
 }
-
 
 .section-title p {
+  color: #7c5cff;
 
-    color: #7c5cff;
+  letter-spacing: 3px;
 
-    letter-spacing: 3px;
+  font-size: 13px;
 
-    font-size: 13px;
-
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
-
 
 .section-title h2 {
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
-
-    font-size: 42px;
-
+  font-size: 42px;
 }
-
 
 .about-content {
-
-    max-width: 900px;
-
+  max-width: 900px;
 }
-
 
 .about-content > p {
+  color: #aaa;
 
-    color: #aaa;
+  line-height: 1.8;
 
-    line-height: 1.8;
+  font-size: 17px;
 
-    font-size: 17px;
-
-    margin-bottom: 40px;
-
+  margin-bottom: 40px;
 }
-
 
 /* INFO */
 
 .info {
+  display: grid;
 
-    display: grid;
+  grid-template-columns: repeat(3, 1fr);
 
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 20px;
-
+  gap: 20px;
 }
-
 
 .info-card {
+  background: #1c1c1c;
 
-    background: #1c1c1c;
+  padding: 25px;
 
-    padding: 25px;
+  border-radius: 10px;
 
-    border-radius: 10px;
-
-    border: 1px solid #252525;
-
+  border: 1px solid #252525;
 }
-
 
 .info-card span {
+  display: block;
 
-    display: block;
+  color: #777;
 
-    color: #777;
+  font-size: 13px;
 
-    font-size: 13px;
-
-    margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
-
 
 .info-card strong {
-
-    font-size: 16px;
-
+  font-size: 16px;
 }
-
 
 /* COURSE */
 
 .course {
-
-    padding: 100px 10%;
-
+  padding: 100px 10%;
 }
-
 
 .course-card {
+  background: #161616;
 
-    background: #161616;
+  border: 1px solid #252525;
 
-    border: 1px solid #252525;
+  border-radius: 15px;
 
-    border-radius: 15px;
-
-    overflow: hidden;
-
+  overflow: hidden;
 }
-
 
 .course-header {
+  padding: 45px;
 
-    padding: 45px;
+  display: flex;
 
-    display: flex;
+  justify-content: space-between;
 
-    justify-content: space-between;
+  align-items: center;
 
-    align-items: center;
-
-    border-bottom: 1px solid #252525;
-
+  border-bottom: 1px solid #252525;
 }
-
 
 .course-label {
+  color: #7c5cff;
 
-    color: #7c5cff;
+  font-size: 12px;
 
-    font-size: 12px;
-
-    letter-spacing: 2px;
-
+  letter-spacing: 2px;
 }
-
 
 .course-header h3 {
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
+  font-size: 32px;
 
-    font-size: 32px;
-
-    margin: 10px 0;
-
+  margin: 10px 0;
 }
-
 
 .course-header p {
-
-    color: #888;
-
+  color: #888;
 }
-
 
 .course-number {
+  font-size: 50px;
 
-    font-size: 50px;
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
 
-    font-weight: bold;
+  color: #7c5cff;
 
-    color: #7c5cff;
-
-    text-align: center;
-
+  text-align: center;
 }
-
 
 .course-number span {
+  display: block;
 
-    display: block;
+  font-size: 10px;
 
-    font-size: 10px;
+  letter-spacing: 2px;
 
-    letter-spacing: 2px;
-
-    color: #777;
-
+  color: #777;
 }
-
 
 /* WEEK */
 
 .week-list {
-
-    padding: 20px;
-
+  padding: 20px;
 }
-
 
 .week-item {
-
-    border-bottom: 1px solid #252525;
-
+  border-bottom: 1px solid #252525;
 }
-
 
 .week-button {
+  width: 100%;
 
-    width: 100%;
+  padding: 22px 15px;
 
-    padding: 22px 15px;
+  background: transparent;
 
-    background: transparent;
+  border: none;
 
-    border: none;
+  color: white;
 
-    color: white;
+  display: flex;
 
-    display: flex;
+  justify-content: space-between;
 
-    justify-content: space-between;
+  align-items: center;
 
-    align-items: center;
+  cursor: pointer;
 
-    cursor: pointer;
+  font-size: 17px;
 
-    font-size: 17px;
-
-    text-align: left;
-
+  text-align: left;
 }
-
 
 .week-button small {
+  color: #7c5cff;
 
-    color: #7c5cff;
+  margin-right: 15px;
 
-    margin-right: 15px;
-
-    font-size: 13px;
-
+  font-size: 13px;
 }
-
 
 .arrow {
+  font-size: 24px;
 
-    font-size: 24px;
+  color: #777;
 
-    color: #777;
-
-    transition: 0.3s;
-
+  transition: 0.3s;
 }
-
 
 /* DROPDOWN */
 
 .week-content {
+  max-height: 0;
 
-    max-height: 0;
+  overflow: hidden;
 
-    overflow: hidden;
-
-    transition: max-height 0.4s ease;
-
+  transition: max-height 0.4s ease;
 }
-
 
 .week-item.active .week-content {
-
-    max-height: 300px;
-
+  max-height: 300px;
 }
-
 
 .week-item.active .arrow {
+  transform: rotate(45deg);
 
-    transform: rotate(45deg);
-
-    color: #7c5cff;
-
+  color: #7c5cff;
 }
-
 
 /* TASK */
 
 .task {
+  background: #1e1e1e;
 
-    background: #1e1e1e;
+  margin: 0 15px 20px;
 
-    margin: 0 15px 20px;
+  padding: 20px;
 
-    padding: 20px;
+  border-radius: 10px;
 
-    border-radius: 10px;
+  display: flex;
 
-    display: flex;
+  justify-content: space-between;
 
-    justify-content: space-between;
-
-    align-items: center;
-
+  align-items: center;
 }
-
 
 .task h4 {
-
-    margin-bottom: 8px;
-
+  margin-bottom: 8px;
 }
-
 
 .task p {
+  color: #888;
 
-    color: #888;
-
-    font-size: 14px;
-
+  font-size: 14px;
 }
-
 
 .pdf-button {
+  padding: 10px 18px;
 
-    padding: 10px 18px;
+  background: #7c5cff;
 
-    background: #7c5cff;
+  color: white;
 
-    color: white;
+  text-decoration: none;
 
-    text-decoration: none;
+  border-radius: 6px;
 
-    border-radius: 6px;
+  font-size: 13px;
 
-    font-size: 13px;
-
-    transition: 0.3s;
-
+  transition: 0.3s;
 }
-
 
 .pdf-button:hover {
-
-    background: #6849e8;
-
+  background: #6849e8;
 }
-
 
 /* FOOTER */
 
 footer {
+  padding: 70px 10%;
 
-    padding: 70px 10%;
+  background: #111;
 
-    background: #111;
-
-    border-top: 1px solid #222;
-
+  border-top: 1px solid #222;
 }
-
 
 footer h2 {
+  font-family: "Space Grotesk", sans-serif;
 
-    font-family: "Space Grotesk", sans-serif;
-
-    font-size: 32px;
-
+  font-size: 32px;
 }
-
 
 footer h2 span {
-
-    color: #7c5cff;
-
+  color: #7c5cff;
 }
-
 
 footer p {
+  color: #777;
 
-    color: #777;
-
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
-
 
 .copyright {
+  margin-top: 40px;
 
-    margin-top: 40px;
-
-    font-size: 13px;
-
+  font-size: 13px;
 }
-
 
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
 
+  .info {
+    grid-template-columns: 1fr;
+  }
 
-    .hero h1 {
+  .course-header {
+    flex-direction: column;
 
-        font-size: 50px;
+    align-items: flex-start;
 
-    }
+    gap: 30px;
+  }
 
+  .course-number {
+    text-align: left;
+  }
 
-    .info {
+  .nav-text {
+    display: none;
+  }
 
-        grid-template-columns: 1fr;
+  .section-title h2 {
+    font-size: 32px;
+  }
 
-    }
+  .task {
+    flex-direction: column;
 
+    align-items: flex-start;
 
-    .course-header {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 30px;
-
-    }
-
-
-    .course-number {
-
-        text-align: left;
-
-    }
-
-
-    .nav-text {
-
-        display: none;
-
-    }
-
-
-    .section-title h2 {
-
-        font-size: 32px;
-
-    }
-
-
-    .task {
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 15px;
-
-    }
-
+    gap: 15px;
+  }
 }
 
 .nav-menu a {
-    color: #aaa;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
 }
 
 .nav-menu a:hover {
-    color: #7c5cff;
+  color: #7c5cff;
 }
