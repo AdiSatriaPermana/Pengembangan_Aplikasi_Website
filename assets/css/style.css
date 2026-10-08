@@ -1,482 +1,384 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 * {
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-
-  background: #0f0f0f;
-
-  color: white;
+    font-family: 'DM Sans', sans-serif;
+    background: #0f0f0f;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar {
-  width: 100%;
-
-  padding: 25px 8%;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  border-bottom: 1px solid #222;
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #242424;
+    background: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-  font-family: "Space Grotesk", sans-serif;
-
-  font-size: 24px;
-
-  font-weight: 700;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .logo span {
-  color: #7c5cff;
+    color: #7c5cff;
 }
 
-.nav-text {
-  color: #888;
-
-  font-size: 14px;
+.nav-menu {
+    display: flex;
+    gap: 24px;
 }
 
-/* HERO */
+.nav-link {
+    color: #b5b5b5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #7c5cff;
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-  min-height: 85vh;
-
-  display: flex;
-
-  align-items: center;
-
-  padding: 80px 10%;
+    min-height: 80vh;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
-  max-width: 800px;
+    max-width: 850px;
 }
 
 .hello {
-  color: #7c5cff;
-
-  font-size: 14px;
-
-  letter-spacing: 3px;
-
-  margin-bottom: 20px;
+    color: #7c5cff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 12px;
 }
 
 .hero h1 {
-  font-family: "Space Grotesk", sans-serif;
-
-  font-size: 80px;
-
-  line-height: 1.05;
-
-  margin-bottom: 30px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(42px, 7vw, 82px);
+    line-height: 1.05;
+    margin-bottom: 25px;
 }
 
 .hero h1 span {
-  color: #7c5cff;
+    color: #7c5cff;
 }
 
-.description {
-  color: #aaa;
-
-  font-size: 18px;
-
-  line-height: 1.7;
-
-  max-width: 600px;
-
-  margin-bottom: 40px;
+.hero .description {
+    color: #b5b5b5;
+    font-size: 18px;
+    max-width: 700px;
+    margin-bottom: 35px;
 }
-
-/* BUTTON */
 
 .btn {
-  display: inline-flex;
-
-  align-items: center;
-
-  gap: 15px;
-
-  padding: 15px 25px;
-
-  background: #7c5cff;
-
-  color: white;
-
-  text-decoration: none;
-
-  border-radius: 8px;
-
-  transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: #7c5cff;
+    color: #ffffff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-
-  background: #6849e8;
+    background: #6948ef;
+    transform: translateY(-3px);
 }
 
-/* ABOUT */
+/* =========================
+   SECTION
+========================= */
 
-.about {
-  padding: 100px 10%;
-
-  background: #151515;
+.section {
+    padding: 90px 8%;
 }
 
-.section-title {
-  margin-bottom: 50px;
-}
-
-.section-title p {
-  color: #7c5cff;
-
-  letter-spacing: 3px;
-
-  font-size: 13px;
-
-  margin-bottom: 10px;
+.sub-title {
+    color: #7c5cff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
 }
 
 .section-title h2 {
-  font-family: "Space Grotesk", sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
 
-  font-size: 42px;
+/* =========================
+   ABOUT / INFO
+========================= */
+
+.about {
+    background: #151515;
 }
 
 .about-content {
-  max-width: 900px;
+    max-width: 850px;
 }
 
 .about-content > p {
-  color: #aaa;
-
-  line-height: 1.8;
-
-  font-size: 17px;
-
-  margin-bottom: 40px;
+    color: #bdbdbd;
+    font-size: 18px;
+    margin-bottom: 35px;
 }
 
-/* INFO */
-
-.info {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 20px;
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .info-card {
-  background: #1c1c1c;
-
-  padding: 25px;
-
-  border-radius: 10px;
-
-  border: 1px solid #252525;
+    background: #1c1c1c;
+    border: 1px solid #292929;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .info-card span {
-  display: block;
-
-  color: #777;
-
-  font-size: 13px;
-
-  margin-bottom: 10px;
+    font-size: 13px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .info-card strong {
-  font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
 }
 
-/* COURSE */
+/* =========================
+   COURSE
+========================= */
 
 .course {
-  padding: 100px 10%;
+    background: #0f0f0f;
 }
 
 .course-card {
-  background: #161616;
-
-  border: 1px solid #252525;
-
-  border-radius: 15px;
-
-  overflow: hidden;
+    background: #121212;
+    border: 1px solid #242424;
+    border-radius: 24px;
+    padding: 40px;
 }
 
 .course-header {
-  padding: 45px;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  border-bottom: 1px solid #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #242424;
+    padding-bottom: 30px;
 }
 
 .course-label {
-  color: #7c5cff;
-
-  font-size: 12px;
-
-  letter-spacing: 2px;
+    display: inline-block;
+    color: #7c5cff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
 }
 
-.course-header h3 {
-  font-family: "Space Grotesk", sans-serif;
-
-  font-size: 32px;
-
-  margin: 10px 0;
+.course-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 32px;
+    margin-bottom: 8px;
 }
 
-.course-header p {
-  color: #888;
+.course-subtitle {
+    color: #999;
 }
 
 .course-number {
-  font-size: 50px;
-
-  font-family: "Space Grotesk", sans-serif;
-
-  font-weight: bold;
-
-  color: #7c5cff;
-
-  text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #7c5cff;
+    line-height: 1;
+    text-align: right;
 }
 
 .course-number span {
-  display: block;
-
-  font-size: 10px;
-
-  letter-spacing: 2px;
-
-  color: #777;
+    display: block;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 1px;
 }
 
-/* WEEK */
+/* =========================
+   WEEK CARDS
+========================= */
 
-.week-list {
-  padding: 20px;
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.week-item {
-  border-bottom: 1px solid #252525;
+.week-card {
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    padding: 28px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.week-button {
-  width: 100%;
-
-  padding: 22px 15px;
-
-  background: transparent;
-
-  border: none;
-
-  color: white;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  cursor: pointer;
-
-  font-size: 17px;
-
-  text-align: left;
+.week-card:hover {
+    transform: translateY(-6px);
+    border-color: #7c5cff;
+    box-shadow: 0 15px 40px rgba(124, 92, 255, 0.12);
 }
 
-.week-button small {
-  color: #7c5cff;
-
-  margin-right: 15px;
-
-  font-size: 13px;
+.week-number {
+    color: #7c5cff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
-.arrow {
-  font-size: 24px;
-
-  color: #777;
-
-  transition: 0.3s;
+.week-info h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 6px;
 }
 
-/* DROPDOWN */
-
-.week-content {
-  max-height: 0;
-
-  overflow: hidden;
-
-  transition: max-height 0.4s ease;
-}
-
-.week-item.active .week-content {
-  max-height: 300px;
-}
-
-.week-item.active .arrow {
-  transform: rotate(45deg);
-
-  color: #7c5cff;
-}
-
-/* TASK */
-
-.task {
-  background: #1e1e1e;
-
-  margin: 0 15px 20px;
-
-  padding: 20px;
-
-  border-radius: 10px;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-}
-
-.task h4 {
-  margin-bottom: 8px;
-}
-
-.task p {
-  color: #888;
-
-  font-size: 14px;
+.week-info p {
+    color: #999;
+    font-size: 14px;
 }
 
 .pdf-button {
-  padding: 10px 18px;
-
-  background: #7c5cff;
-
-  color: white;
-
-  text-decoration: none;
-
-  border-radius: 6px;
-
-  font-size: 13px;
-
-  transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 11px 18px;
+    background: #7c5cff;
+    color: #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
 }
 
 .pdf-button:hover {
-  background: #6849e8;
+    background: #6948ef;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-  padding: 70px 10%;
-
-  background: #111;
-
-  border-top: 1px solid #222;
+    border-top: 1px solid #242424;
+    padding: 50px 8%;
+    text-align: center;
+    background: #0f0f0f;
 }
 
 footer h2 {
-  font-family: "Space Grotesk", sans-serif;
-
-  font-size: 32px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    margin-bottom: 6px;
 }
 
 footer h2 span {
-  color: #7c5cff;
+    color: #7c5cff;
 }
 
 footer p {
-  color: #777;
-
-  margin-top: 10px;
+    color: #888;
+    font-size: 14px;
 }
 
-.copyright {
-  margin-top: 40px;
-
-  font-size: 13px;
+footer .copyright {
+    margin-top: 20px;
+    color: #555;
+    font-size: 13px;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+    .week-grid,
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 50px;
-  }
+    .navbar,
+    .hero,
+    .section,
+    footer {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 
-  .info {
-    grid-template-columns: 1fr;
-  }
+    .course-header {
+        flex-direction: column;
+        gap: 20px;
+    }
 
-  .course-header {
-    flex-direction: column;
+    .course-number {
+        text-align: left;
+    }
 
-    align-items: flex-start;
-
-    gap: 30px;
-  }
-
-  .course-number {
-    text-align: left;
-  }
-
-  .nav-text {
-    display: none;
-  }
-
-  .section-title h2 {
-    font-size: 32px;
-  }
-
-  .task {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 15px;
-  }
-}
-
-.nav-menu a {
-  color: #aaa;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.nav-menu a:hover {
-  color: #7c5cff;
+    .week-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
