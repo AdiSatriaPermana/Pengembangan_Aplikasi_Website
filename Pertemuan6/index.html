@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertemuan 06 - ADI.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR / HEADER -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="back-button" aria-label="Kembali ke Web Utama" title="Kembali ke Web Utama">
+        &larr;
+      </a>
+      <div class="nav-links">
+        <a href="https://todolist-chi-dusky.vercel.app/" target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-primary">
+          Buka Aplikasi TodoList ↗
+        </a>
+        <!-- MEMBUKA PDF LANGSUNG DI TAB BARU SEPERTI PERTEMUAN 1 -->
+        <a href="Pertemuan6.pdf" target="_blank" rel="noopener noreferrer" class="nav-btn nav-btn-secondary">
+          Dokumen PDF ↗
+        </a>
+        <a href="#penjelasan-section" class="nav-btn nav-btn-secondary">
+          Penjelasan
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    
+    <!-- HERO HEADER / JUDUL UTAMA -->
+    <header class="hero-header">
+      <span class="hero-tag">WEEK 06</span>
+      <h1>Tugas Pertemuan 06</h1>
+      <p>Pengembangan Aplikasi Web Manajemen Tugas Kuliah menggunakan React, TypeScript, Vite, dan Environment Variables.</p>
+    </header>
+
+    <!-- PENJELASAN TEKNOLOGI UTAMA -->
+    <section id="penjelasan-section" class="content-section">
+      <div class="section-header">
+        <h2>💡 Penjelasan Konsep & Teknologi Utama</h2>
+      </div>
+
+      <div class="tech-stack-grid">
+        
+        <!-- GIT & GITHUB -->
+        <article class="tech-card">
+          <div class="tech-icon">🔀</div>
+          <h3>1. Git & GitHub Workflow</h3>
+          <p><strong>Git</strong> berperan sebagai <em>Version Control System (VCS)</em> lokal untuk mencatat setiap perubahan kode dasar (*commit history*). Alur kerja yang diterapkan pada tugas ini meliputi:</p>
+          <ul>
+            <li><strong>Branching:</strong> Memisah pengembangan fitur baru dari branch <code>main</code> ke branch fitur seperti <code>feature-fitur-baru</code> agar kode produksi tetap stabil.</li>
+            <li><strong>Pull Request (PR):</strong> Pengajuan penggabungan kode dari branch fitur menuju <code>main</code> di GitHub untuk ditinjau.</li>
+            <li><strong>Merge Conflict:</strong> Terjadi ketika ada perombakan pada baris kode yang sama di dua branch berbeda. Dipicu secara sengaja pada berkas <code>README.md</code>.</li>
+            <li><strong>Conflict Resolution:</strong> Penyelesaian bentrokan baris kode melalui editor GitHub Web / VS Code dengan membuang marker bentrok (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>) sebelum dilakukan <em>commit merge</em> akhir.</li>
+          </ul>
+        </article>
+
+        <!-- NPM -->
+        <article class="tech-card">
+          <div class="tech-icon">📦</div>
+          <h3>2. Package Manager (npm)</h3>
+          <p><strong>npm (Node Package Manager)</strong> mengelola instalasi modul dan pustaka (*dependencies*) eksternal JavaScript/TypeScript:</p>
+          <ul>
+            <li><strong><code>package.json</code>:</strong> Menampung metadata proyek beserta daftar pustaka yang dipakai (seperti <code>react</code>, <code>lucide-react</code>, dan <code>vite</code>).</li>
+            <li><strong><code>package-lock.json</code>:</strong> Mengunci versi spesifik dari setiap dependensi berserta sub-dependensinya agar hasil instalasi konsisten di semua lingkungan komputer pengembang.</li>
+            <li><strong><code>node_modules/</code>:</strong> Folder penyimpanan seluruh kode pustaka hasil unduhan npm.</li>
+          </ul>
+        </article>
+
+        <!-- TYPESCRIPT & TRANSPILER -->
+        <article class="tech-card">
+          <div class="tech-icon">📘</div>
+          <h3>3. TypeScript & Peran Transpiler</h3>
+          <p><strong>TypeScript</strong> menambahkan sistem pengetikan statis (*static typing*) opsional di atas bahasa JavaScript untuk menangkap kesalahan tipe (*type errors*) sejak tahap penulisan kode (*development time*).</p>
+          <ul>
+            <li><strong>Peran Transpiler:</strong> Browser web native hanya mampu mengeksekusi JavaScript standar. <em>Transpiler</em> (seperti modul kompilator TypeScript <code>tsc</code> atau Esbuild) bertugas mentransformasikan kode TypeScript (<code>.ts</code> / <code>.tsx</code>) menjadi kode JavaScript murni (<code>.js</code>) yang valid secara sintaksis untuk dijalankan di browser.</li>
+          </ul>
+        </article>
+
+        <!-- VITE, DEV SERVER & BUNDLER -->
+        <article class="tech-card">
+          <div class="tech-icon">⚡</div>
+          <h3>4. Vite (Dev Server & Bundler)</h3>
+          <p><strong>Vite</strong> adalah instrumen pembangun (*build tool*) frontend generasi baru yang menawarkan performa pengembangan jauh lebih cepat dibanding alat tradisional:</p>
+          <ul>
+            <li><strong>Development Server & HMR:</strong> Menggunakan <em>Native ES Modules (ESM)</em> untuk pemuatan modul secara instan. Fitur <em>Hot Module Replacement (HMR)</em> memperbarui tampilan browser secara real-time saat kode diubah tanpa memuat ulang seluruh halaman.</li>
+            <li><strong>Peran Bundler:</strong> Saat proses produksi (<code>npm run build</code>), Vite menggunakan bundler <strong>Rollup</strong> untuk menggabungkan (*bundle*), meminifikasi (*minify*), dan membagi kode (*code splitting*) menjadi berkas-berkas statis teroptimasi yang siap di-deploy.</li>
+          </ul>
+        </article>
+
+        <!-- ENVIRONMENT VARIABLES -->
+        <article class="tech-card">
+          <div class="tech-icon">🔑</div>
+          <h3>5. Environment Variables (.env)</h3>
+          <p>Variabel lingkungan memisahkan nilai konfigurasi dinamis atau data sensitif dari basis kode aplikasi:</p>
+          <ul>
+            <li><strong>Prefix <code>VITE_</code>:</strong> Di framework Vite, hanya variabel dengan awalan <code>VITE_</code> (contoh: <code>VITE_APP_NAME</code>) yang dipaparkan secara aman ke sisi frontend client via objek <code>import.meta.env</code>.</li>
+            <li><strong>Platform Deployment:</strong> Nilai variabel dimasukkan pada pengaturan dashboard Vercel tanpa perlu menyertakan berkas rahasia <code>.env</code> ke repository publik GitHub.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
